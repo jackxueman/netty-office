@@ -299,11 +299,11 @@
     </profile>
     <profile>
       <id>coverage</id>
-      <properties>
+     <!-- <properties>
         <argLine.coverage>${jacoco.argLine}</argLine.coverage>
-      </properties>
+      </properties>-->
       <build>
-        <plugins>
+      <!--  <plugins>
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
@@ -320,7 +320,7 @@
               </execution>
             </executions>
           </plugin>
-        </plugins>
+        </plugins>-->
       </build>
     </profile>
     <profile>
@@ -368,7 +368,9 @@
       -XX:+HeapDumpOnOutOfMemoryError
     </argLine.common>
     <!-- Default to ALPN. See forcenpn profile to force NPN -->
+<!--
     <argLine.alpnAgent>-javaagent:${jetty.alpnAgent.path}=${jetty.alpnAgent.option}</argLine.alpnAgent>
+-->
     <argLine.leak>-D_</argLine.leak> <!-- Overridden when 'leak' profile is active -->
     <argLine.noUnsafe>-D_</argLine.noUnsafe> <!-- Overridden when 'noUnsafe' profile is active -->
     <argLine.coverage>-D_</argLine.coverage> <!-- Overridden when 'coverage' profile is active -->
@@ -823,7 +825,7 @@
     </extensions>
 
     <plugins>
-      <plugin>
+    <!--  <plugin>
         <groupId>com.github.siom79.japicmp</groupId>
         <artifactId>japicmp-maven-plugin</artifactId>
         <version>0.14.3</version>
@@ -834,7 +836,7 @@
             <breakBuildOnSourceIncompatibleModifications>true</breakBuildOnSourceIncompatibleModifications>
             <oldVersionPattern>\d+\.\d+\.\d+\.Final</oldVersionPattern>
             <ignoreMissingClassesByRegularExpressions>
-              <!-- ignore everything which is not part of netty itself as the plugin can not handle optional dependencies -->
+              &lt;!&ndash; ignore everything which is not part of netty itself as the plugin can not handle optional dependencies &ndash;&gt;
               <ignoreMissingClassesByRegularExpression>^(?!io\.netty\.).*</ignoreMissingClassesByRegularExpression>
               <ignoreMissingClassesByRegularExpression>^io\.netty\.internal\.tcnative\..*</ignoreMissingClassesByRegularExpression>
             </ignoreMissingClassesByRegularExpressions>
@@ -853,8 +855,8 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
+      </plugin>-->
+     <!-- <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
         <version>${enforcer.plugin.version}</version>
         <executions>
@@ -866,8 +868,8 @@
             <configuration>
               <rules>
                 <requireJavaVersion>
-                  <!-- Enforce JDK 1.8+ for compilation. -->
-                  <!-- This is needed because of java.util.zip.Deflater and NIO UDP multicast. -->
+                  &lt;!&ndash; Enforce JDK 1.8+ for compilation. &ndash;&gt;
+                  &lt;!&ndash; This is needed because of java.util.zip.Deflater and NIO UDP multicast. &ndash;&gt;
                   <version>[1.8.0,)</version>
                 </requireJavaVersion>
                 <requireMavenVersion>
@@ -884,7 +886,7 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin>-->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
@@ -941,6 +943,7 @@
           </execution>
         </executions>
       </plugin>
+<!--
       <plugin>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.1.0</version>
@@ -967,10 +970,10 @@
             <id>nohttp-checkstyle-validation</id>
             <phase>validate</phase>
             <configuration>
-              <!-- skip>false</skip -->
+              &lt;!&ndash; skip>false</skip &ndash;&gt;
               <configLocation>nohttp-checkstyle.xml</configLocation>
               <suppressionsLocation>nohttp-checkstyle-suppressions.xml</suppressionsLocation>
-              <!-- propertyExpansion>main.basedir=${main.basedir}</propertyExpansion -->
+              &lt;!&ndash; propertyExpansion>main.basedir=${main.basedir}</propertyExpansion &ndash;&gt;
               <encoding>UTF-8</encoding>
               <sourceDirectories>${basedir}</sourceDirectories>
               <includes>**/*</includes>
@@ -1000,6 +1003,7 @@
           </dependency>
         </dependencies>
       </plugin>
+-->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>xml-maven-plugin</artifactId>
@@ -1026,6 +1030,7 @@
         </configuration>
       </plugin>
       <!-- Download the npn-boot.jar in advance to add it to the boot classpath. -->
+<!--
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
@@ -1043,6 +1048,7 @@
           </execution>
         </executions>
       </plugin>
+-->
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
@@ -1127,9 +1133,9 @@
               <Bundle-Name>${project.name}</Bundle-Name>
               <Bundle-SymbolicName>${project.groupId}.${project.artifactId}.source</Bundle-SymbolicName>
               <Bundle-Vendor>${project.organization.name}</Bundle-Vendor>
-              <Bundle-Version>${parsedVersion.osgiVersion}</Bundle-Version>
+             <!-- <Bundle-Version>${parsedVersion.osgiVersion}</Bundle-Version>
               <Eclipse-SourceBundle>${project.groupId}.${project.artifactId};version="${parsedVersion.osgiVersion}";roots:="."</Eclipse-SourceBundle>
-            </manifestEntries>
+           --> </manifestEntries>
           </archive>
         </configuration>
 
@@ -1150,7 +1156,7 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+   <!--   <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.10.4</version>
         <configuration>
@@ -1160,7 +1166,7 @@
           <author>false</author>
           <keywords>true</keywords>
         </configuration>
-      </plugin>
+      </plugin>-->
       <plugin>
         <artifactId>maven-deploy-plugin</artifactId>
         <version>2.8.2</version>
@@ -1198,10 +1204,11 @@
 
       <!-- Ensure to put maven-antrun-plugin at the end of the plugin list
            so that they are run lastly in the same phase. -->
+<!--
       <plugin>
         <artifactId>maven-antrun-plugin</artifactId>
         <executions>
-          <!-- Generate the version properties for all artifacts. -->
+          &lt;!&ndash; Generate the version properties for all artifacts. &ndash;&gt;
           <execution>
             <id>write-version-properties</id>
             <phase>initialize</phase>
@@ -1212,23 +1219,23 @@
               <target>
                 <taskdef resource="net/sf/antcontrib/antlib.xml" />
 
-                <!-- Get the information about the latest commit -->
+                &lt;!&ndash; Get the information about the latest commit &ndash;&gt;
                 <exec executable="git" outputproperty="gitOutput.lastCommit" resultproperty="gitExitCode.lastCommit" failonerror="false" failifexecutionfails="false">
                   <arg value="log" />
                   <arg value="-1" />
-                  <arg value="--format=format:%h %H %cd" />
-                  <arg value="--date=iso" />
+                  <arg value="&#45;&#45;format=format:%h %H %cd" />
+                  <arg value="&#45;&#45;date=iso" />
                 </exec>
-                <propertyregex property="shortCommitHash" input="${gitOutput.lastCommit}" regexp="^([0-9a-f]+) .*$" select="\1" casesensitive="true" defaultValue="0" />
+               &lt;!&ndash; <propertyregex property="shortCommitHash" input="${gitOutput.lastCommit}" regexp="^([0-9a-f]+) .*$" select="\1" casesensitive="true" defaultValue="0" />
                 <propertyregex property="longCommitHash" input="${gitOutput.lastCommit}" regexp="^[0-9a-f]+ ([0-9a-f]{40}) .*$" select="\1" casesensitive="true" defaultValue="0000000000000000000000000000000000000000" />
                 <propertyregex property="commitDate" input="${gitOutput.lastCommit}" regexp="^[0-9a-f]+ [0-9a-f]{40} (.*)$" select="\1" casesensitive="true" defaultValue="1970-01-01 00:00:00 +0000" />
-
-                <!-- Get the information abount whether the repository is clean or dirty -->
+&ndash;&gt;
+                &lt;!&ndash; Get the information abount whether the repository is clean or dirty &ndash;&gt;
                 <exec executable="git" outputproperty="gitOutput.repoStatus" resultproperty="gitExitCode.repoStatus" failonerror="false" failifexecutionfails="false">
                   <arg value="status" />
-                  <arg value="--porcelain" />
+                  <arg value="&#45;&#45;porcelain" />
                 </exec>
-                <if>
+               &lt;!&ndash; <if>
                   <equals arg2="0" arg1="${gitExitCode.repoStatus}" />
                   <then>
                     <if>
@@ -1244,17 +1251,17 @@
                   <else>
                     <property name="repoStatus" value="unknown" />
                   </else>
-                </if>
+                </if>&ndash;&gt;
 
-                <!-- Print the obtained commit information. -->
-                <echo>Current commit: ${shortCommitHash} on ${commitDate}</echo>
-
-                <!-- Generate the .properties file. -->
-                <!--
+                &lt;!&ndash; Print the obtained commit information. &ndash;&gt;
+               &lt;!&ndash; <echo>Current commit: ${shortCommitHash} on ${commitDate}</echo>
+&ndash;&gt;
+                &lt;!&ndash; Generate the .properties file. &ndash;&gt;
+                &lt;!&ndash;
                 <property name="metaInfDir" value="${project.basedir}/src/main/resources/META-INF" />
-                -->
+                &ndash;&gt;
                 <property name="metaInfDir" value="${project.build.outputDirectory}/META-INF" />
-                <property name="versionPropFile" value="${metaInfDir}/${project.groupId}.versions.properties" />
+             &lt;!&ndash;   <property name="versionPropFile" value="${metaInfDir}/${project.groupId}.versions.properties" />
                 <mkdir dir="${metaInfDir}" />
                 <delete file="${versionPropFile}" quiet="true" />
 
@@ -1265,7 +1272,7 @@
                   <entry key="${project.artifactId}.shortCommitHash" value="${shortCommitHash}" />
                   <entry key="${project.artifactId}.longCommitHash" value="${longCommitHash}" />
                   <entry key="${project.artifactId}.repoStatus" value="${repoStatus}" />
-                </propertyfile>
+                </propertyfile>&ndash;&gt;
               </target>
             </configuration>
           </execution>
@@ -1294,6 +1301,7 @@
           </dependency>
         </dependencies>
       </plugin>
+-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-remote-resources-plugin</artifactId>
@@ -1342,9 +1350,9 @@
                   <manifest>
                     <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                   </manifest>
-                  <manifestEntries>
+                <!--  <manifestEntries>
                     <Automatic-Module-Name>${javaModuleName}</Automatic-Module-Name>
-                  </manifestEntries>
+                  </manifestEntries>-->
                   <index>true</index>
                   <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
                 </archive>

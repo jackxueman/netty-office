@@ -1,0 +1,20 @@
+#Sun Nov 22 10:33:30 CST 2020
+configuration*?=756FF4ED34149941179C72B206197496488AB2C2
+module-resource*?\:/io/netty/suppressions.xml=2FABD81D219BF019C659A4A6ACE87022CE88CE54
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/LastSmtpContent.java=1605955716705
+/opt/p7/netty-office/codec-smtp/src/test/java/io/netty/handler/codec/smtp/SmtpRequestEncoderTest.java=1605955716707
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/SmtpRequests.java=1605955716706
+/opt/p7/netty-office/codec-smtp/src/test/java/io/netty/handler/codec/smtp/SmtpResponseDecoderTest.java=1605955716707
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/DefaultSmtpContent.java=1605955716704
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/DefaultSmtpRequest.java=1605955716704
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/DefaultLastSmtpContent.java=1605955716704
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/SmtpUtils.java=1605955716706
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/SmtpResponseDecoder.java=1605955716706
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/SmtpCommand.java=1605955716705
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/SmtpResponse.java=1605955716706
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/DefaultSmtpResponse.java=1605955716705
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/package-info.java=1605955716706
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/SmtpRequestEncoder.java=1605955716706
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/SmtpContent.java=1605955716705
+/opt/p7/netty-office/codec-smtp/src/test/java/io/netty/handler/codec/smtp/SmtpCommandTest.java=1605955716707
+/opt/p7/netty-office/codec-smtp/src/main/java/io/netty/handler/codec/smtp/SmtpRequest.java=1605955716705

@@ -1,0 +1,7 @@
+#Sun Nov 22 10:33:34 CST 2020
+configuration*?=28C02E0A5A9471CC7CBE69DB851561002613DAFC
+module-resource*?\:/io/netty/suppressions.xml=2FABD81D219BF019C659A4A6ACE87022CE88CE54
+/opt/p7/netty-office/testsuite-native-image/src/main/java/io/netty/testsuite/svm/HttpNativeServerHandler.java=1605955716988
+/opt/p7/netty-office/testsuite-native-image/src/main/java/io/netty/testsuite/svm/HttpNativeServer.java=1605955716987
+/opt/p7/netty-office/testsuite-native-image/src/main/java/io/netty/testsuite/svm/package-info.java=1605955716988
+/opt/p7/netty-office/testsuite-native-image/src/main/java/io/netty/testsuite/svm/HttpNativeServerInitializer.java=1605955716988

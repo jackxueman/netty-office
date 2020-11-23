@@ -1,0 +1,7 @@
+#Sun Nov 22 10:33:36 CST 2020
+configuration*?=22A5F40DAA67900D72B22F7D06FC97493E8CEC4D
+module-resource*?\:/io/netty/suppressions.xml=2FABD81D219BF019C659A4A6ACE87022CE88CE54
+/opt/p7/netty-office/transport-native-unix-common-tests/src/main/java/io/netty/channel/unix/tests/DetectPeerCloseWithoutReadTest.java=1605955717046
+/opt/p7/netty-office/transport-native-unix-common-tests/src/main/java/io/netty/channel/unix/tests/package-info.java=1605955717046
+/opt/p7/netty-office/transport-native-unix-common-tests/src/main/java/io/netty/channel/unix/tests/UnixTestUtils.java=1605955717046
+/opt/p7/netty-office/transport-native-unix-common-tests/src/main/java/io/netty/channel/unix/tests/SocketTest.java=1605955717046

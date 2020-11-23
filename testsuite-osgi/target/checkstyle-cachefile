@@ -1,0 +1,5 @@
+#Sun Nov 22 10:33:22 CST 2020
+configuration*?=CAC3B34B513C0B9C70BD61233B5F7810668A70F3
+module-resource*?\:/io/netty/suppressions.xml=2FABD81D219BF019C659A4A6ACE87022CE88CE54
+/opt/p7/netty-office/testsuite-osgi/src/test/java/io/netty/osgitests/package-info.java=1605955716989
+/opt/p7/netty-office/testsuite-osgi/src/test/java/io/netty/osgitests/OsgiBundleTest.java=1605955716989

@@ -1,0 +1,9 @@
+#Sun Nov 22 10:33:32 CST 2020
+configuration*?=D49C932324E3F5DE1F73A6178032D3456B562A55
+module-resource*?\:/io/netty/suppressions.xml=2FABD81D219BF019C659A4A6ACE87022CE88CE54
+/opt/p7/netty-office/transport-rxtx/src/main/java/io/netty/channel/rxtx/package-info.java=1605955717053
+/opt/p7/netty-office/transport-rxtx/src/main/java/io/netty/channel/rxtx/DefaultRxtxChannelConfig.java=1605955717053
+/opt/p7/netty-office/transport-rxtx/src/main/java/io/netty/channel/rxtx/RxtxChannelConfig.java=1605955717053
+/opt/p7/netty-office/transport-rxtx/src/main/java/io/netty/channel/rxtx/RxtxChannel.java=1605955717053
+/opt/p7/netty-office/transport-rxtx/src/main/java/io/netty/channel/rxtx/RxtxDeviceAddress.java=1605955717053
+/opt/p7/netty-office/transport-rxtx/src/main/java/io/netty/channel/rxtx/RxtxChannelOption.java=1605955717053

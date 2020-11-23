@@ -1,0 +1,18 @@
+#Sun Nov 22 10:33:29 CST 2020
+configuration*?=BBCB4BC34F8CCD1B30AF09E494B157908338DAA3
+module-resource*?\:/io/netty/suppressions.xml=2FABD81D219BF019C659A4A6ACE87022CE88CE54
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxyCommand.java=1605955716589
+/opt/p7/netty-office/codec-haproxy/src/test/java/io/netty/handler/codec/haproxy/HAProxyIntegrationTest.java=1605955716592
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxyTLV.java=1605955716591
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxyMessageEncoder.java=1605955716590
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxyMessage.java=1605955716590
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxyProtocolVersion.java=1605955716590
+/opt/p7/netty-office/codec-haproxy/src/test/java/io/netty/handler/codec/haproxy/HAProxyMessageDecoderTest.java=1605955716592
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxySSLTLV.java=1605955716591
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/package-info.java=1605955716591
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxyProtocolException.java=1605955716590
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxyConstants.java=1605955716590
+/opt/p7/netty-office/codec-haproxy/src/test/java/io/netty/handler/codec/haproxy/HAProxySSLTLVTest.java=1605955716592
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxyMessageDecoder.java=1605955716590
+/opt/p7/netty-office/codec-haproxy/src/test/java/io/netty/handler/codec/haproxy/HaProxyMessageEncoderTest.java=1605955716592
+/opt/p7/netty-office/codec-haproxy/src/main/java/io/netty/handler/codec/haproxy/HAProxyProxiedProtocol.java=1605955716591

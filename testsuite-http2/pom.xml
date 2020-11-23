@@ -82,7 +82,7 @@
 
   <build>
     <plugins>
-      <plugin>
+      <!--<plugin>
         <groupId>com.github.madgnome</groupId>
         <artifactId>h2spec-maven-plugin</artifactId>
         <version>0.6</version>
@@ -116,7 +116,7 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
+      </plugin>-->
     </plugins>
   </build>
 </project>

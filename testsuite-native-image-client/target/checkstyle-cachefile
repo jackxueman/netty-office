@@ -1,0 +1,5 @@
+#Sun Nov 22 10:33:36 CST 2020
+configuration*?=8ED1072C170E5C024D9DA0FD97CA73D66F85BF4D
+module-resource*?\:/io/netty/suppressions.xml=2FABD81D219BF019C659A4A6ACE87022CE88CE54
+/opt/p7/netty-office/testsuite-native-image-client/src/main/java/io/netty/testsuite/svm/client/DnsNativeClient.java=1605955716986
+/opt/p7/netty-office/testsuite-native-image-client/src/main/java/io/netty/testsuite/svm/client/package-info.java=1605955716987

@@ -1,0 +1,25 @@
+#Sun Nov 22 10:33:37 CST 2020
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/AddressResolver.java=1605955716978
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/AbstractAddressResolver.java=1605955716978
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/RoundRobinInetAddressResolver.java=1605955716980
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/InetNameResolver.java=1605955716979
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/DefaultHostsFileEntriesResolver.java=1605955716979
+/opt/p7/netty-office/resolver/src/test/java/io/netty/resolver/InetSocketAddressResolverTest.java=1605955716981
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/ResolvedAddressTypes.java=1605955716980
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/HostsFileParser.java=1605955716979
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/NoopAddressResolver.java=1605955716980
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/NameResolver.java=1605955716979
+module-resource*?\:/io/netty/suppressions.xml=2FABD81D219BF019C659A4A6ACE87022CE88CE54
+configuration*?=64089B969BDE79CC5FD656F16487BF2DCB78C0A1
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/NoopAddressResolverGroup.java=1605955716980
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/SimpleNameResolver.java=1605955716980
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/package-info.java=1605955716980
+/opt/p7/netty-office/resolver/src/test/java/io/netty/resolver/HostsFileParserTest.java=1605955716981
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/AddressResolverGroup.java=1605955716978
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/HostsFileEntriesResolver.java=1605955716979
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/DefaultNameResolver.java=1605955716979
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/HostsFileEntries.java=1605955716979
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/InetSocketAddressResolver.java=1605955716979
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/CompositeNameResolver.java=1605955716978
+/opt/p7/netty-office/resolver/src/test/java/io/netty/resolver/DefaultHostsFileEntriesResolverTest.java=1605955716981
+/opt/p7/netty-office/resolver/src/main/java/io/netty/resolver/DefaultAddressResolverGroup.java=1605955716978
